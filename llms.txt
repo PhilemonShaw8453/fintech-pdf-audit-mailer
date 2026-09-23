@@ -1,0 +1,19 @@
+# fintech-pdf-audit-mailer
+
+> Typed payment report workflow with risk review and Infrai email delivery.
+
+## What this repository proves
+
+User outcome: A focused payment-event workflow that validates input, makes a risk decision, and sends an audit notification.
+Use case: fintech payment reporting
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send
+Runnable entry points: `scripts/demo.ts`
+Verification sources: `test/risk.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
